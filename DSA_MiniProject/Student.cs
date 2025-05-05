@@ -6,24 +6,23 @@ using System.Threading.Tasks;
 
 namespace DSA_MiniProject
 {
-    public class Student
+    public class Student//we can access this student class anywhere.
     {
-
-
-        public int Id;
+        //proeperties
+        public int Id; 
         public string Name;
         public float Marks;
-        public int age;
-        public double mob_no;
+        public string mob_no;
 
-        public Student(int identity, string name, float marks,int Age,double Mob_No)
+        public Student(int identity, string name, float marks,string Mob_no)//constructor for the student.
             {
                 Id = identity;
                 Name = name;
                 Marks = marks;
-                age = Age;
-                mob_no= Mob_No;
+                mob_no= Mob_no;
         }
+
+        
         
 
     }
