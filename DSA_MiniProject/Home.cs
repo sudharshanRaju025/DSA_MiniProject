@@ -8,17 +8,17 @@ class Program
     /// <summary>
     /// student management system
     /// </summary>
-    static List<Student> students = new List<Student> //list created for the students.
-    {
-        new Student(08,"sudharshan raju",98,"9392486441"),
-        new Student(11,"sandy",97,"9765486441"),
-        new Student(07,"sunny",95,"9395486441"),
-        new Student(3,"samuel",94,"9392489841"),
-        new Student(10,"alice",93,"9392678841"),
-        new Student(01,"bob",90,"9393459841"),
-        new Student(05,"alex",89,"9398489841"),
-        new Student(33,"siri",87,"9392439841"),
-    };
+    static List<Student> students = new List<Student>(); //list created for the students.
+    //{
+    //    new Student(08,"sudharshan raju",98,"9392486441"),
+    //    new Student(11,"sandy",97,"9765486441"),
+    //    new Student(07,"sunny",95,"9395486441"),
+    //    new Student(3,"samuel",94,"9392489841"),
+    //    new Student(10,"alice",93,"9392678841"),
+    //    new Student(01,"bob",90,"9393459841"),
+    //    new Student(05,"alex",89,"9398489841"),
+    //    new Student(33,"siri",87,"9392439841"),
+    //};
 
     //declaring one stack for removed students
 
@@ -98,7 +98,7 @@ class Program
         var id = students.Find(s => s.Id == roll);//here linq is used
         if (id != null)
         {
-            Console.WriteLine($"identity:{id.Id},Name:{id.Name},Marks:{id.Marks}");
+            Console.WriteLine($"identity:{id.Id},Name:{id.Name},Marks:{id.Marks},Mob_no:{id.mob_no}");
         }
         else
         {
